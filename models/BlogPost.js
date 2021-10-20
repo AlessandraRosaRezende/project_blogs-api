@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     published: DataTypes.DATE,
     updated: DataTypes.DATE,
   },
-  { timestamps: false });
+  { timestamps: false, tableName: 'BlogPosts' });
 
   BlogPost.associate = (models) => {
     BlogPost.belongsTo(models.User, { 
@@ -16,5 +16,4 @@ module.exports = (sequelize, DataTypes) => {
   return BlogPost;
 };
 
-// https://stackoverflow.com/questions/40694689/set-defaultvalue-to-todays-date-in-a-sequelize-migration
-// defaultValue para campos de data
+// https://sequelize.org/master/manual/model-basics.html

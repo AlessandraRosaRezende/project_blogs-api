@@ -20,3 +20,5 @@ module.exports = (sequelize, _DataTypes) => {
 
   return PostsCategory;
 };
+
+// https://sequelize.org/master/manual/model-basics.html

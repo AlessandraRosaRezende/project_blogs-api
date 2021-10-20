@@ -6,3 +6,5 @@ module.exports = (sequelize, DataTypes) => {
 
   return Category;
 };
+
+// https://sequelize.org/master/manual/model-basics.html

@@ -14,3 +14,5 @@ module.exports = (sequelize, DataTypes) => {
   };
   return User;
 };
+
+// https://sequelize.org/master/manual/model-basics.html
